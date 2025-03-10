@@ -1,0 +1,131 @@
+/* TodoList Component */
+.todo-list {
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 20px;
+  width: 100%;
+}
+
+/* TodoForm Component */
+.todo-form {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color var(--transition-speed);
+}
+
+.todo-input:focus {
+  border-color: var(--primary-color);
+}
+
+.add-button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  font-size: 1rem;
+  transition: background-color var(--transition-speed);
+}
+
+.add-button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* TodoItem Component */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: var(--background-light);
+  border-radius: var(--border-radius);
+  transition: all var(--transition-speed);
+}
+
+.todo-item:hover {
+  background-color: var(--background-hover);
+}
+
+.todo-item.completed {
+  opacity: 0.7;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+.todo-checkbox {
+  margin-right: 10px;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.todo-text {
+  flex-grow: 1;
+  word-break: break-word;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: var(--delete-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 5px;
+  line-height: 1;
+  transition: color var(--transition-speed);
+}
+
+.delete-button:hover {
+  color: var(--delete-hover);
+}
+
+/* Todo Stats */
+.todos {
+  margin-top: 20px;
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--text-muted);
+  font-style: italic;
+  padding: 20px 0;
+}
+
+.todo-stats {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.clear-completed {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-decoration: underline;
+  padding: 0;
+  transition: color var(--transition-speed);
+}
+
+.clear-completed:hover {
+  color: var(--delete-color);
+} 

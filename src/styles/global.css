@@ -1,0 +1,54 @@
+:root {
+  --primary-color: #4a90e2;
+  --primary-hover: #3a80d2;
+  --text-color: #333;
+  --text-light: #666;
+  --text-muted: #888;
+  --background-color: #fff;
+  --background-light: #f9f9f9;
+  --background-hover: #f0f0f0;
+  --border-color: #ddd;
+  --delete-color: #ff5252;
+  --delete-hover: #ff0000;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --border-radius: 4px;
+  --transition-speed: 0.3s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+} 
