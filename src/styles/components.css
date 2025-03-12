@@ -128,4 +128,27 @@
 
 .clear-completed:hover {
   color: var(--delete-color);
+}
+
+/* Clock Component */
+.clock {
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
+
+.clock .date {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--text-light);
+}
+
+.clock .time {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--primary-color);
 } 

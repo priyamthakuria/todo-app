@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
+import Clock from './Clock';
 
 export interface Todo {
   id: number;
@@ -50,6 +51,7 @@ const TodoList: React.FC = () => {
   return (
     <div className="todo-list">
       <h1 className="app-title">Todo App</h1>
+      <Clock />
       <TodoForm addTodo={addTodo} />
       <div className="todos">
         {todos.length === 0 ? (
