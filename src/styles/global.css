@@ -28,8 +28,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--text-color);
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background-color: #fafafa;
   min-height: 100vh;
+  padding: 0 16px;
 }
 
 button {
@@ -42,9 +43,12 @@ input {
 }
 
 .container {
-  max-width: 500px;
+  max-width: 922px;
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .app-title {
